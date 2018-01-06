@@ -7,11 +7,11 @@ Following image shows improvements such as facial features(make-up, mustache, be
 <p align="center"> original : without semi-supervised learning / improved : with semi-supervised learning
 
 ## What are differences with original CycleGAN?
-1. Batch size 1 -> 16 (Critical)  
-2. Instance Normalization -> Batch Normalization (Critical)  
-3. Model architecture (Prevent from training faulure)  
-4. Smooth labeling (Prevent from training faulure)  
-5. Multitask learning with classification loss (Critical)  
+1. Batch size 1 -> 16
+2. Instance Normalization -> Batch Normalization
+3. Model architecture
+4. Smooth labeling
+5. Multitask learning with classification loss (semi-supervised learning)
 
 ## Influence
 __1. Increasing Batch Size & Replacing Instance Norm with Batch Norm__  
