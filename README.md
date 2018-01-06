@@ -4,6 +4,7 @@ Futhermore, this implementation is using __multitask learning with semi-supervis
 Following image shows improvements such as facial features(make-up, mustache, beard, etc) and image qualities.
 
 <p align="center"><img width="100%" src="png/1.png" /></p>
+<p align="center"> original : without semi-supervised learning / improved : with semi-supervised learning
 
 ## What are differences with original CycleGAN?
 1. Batch size 1 -> 16 (Critical)  
