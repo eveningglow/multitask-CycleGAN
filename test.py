@@ -74,7 +74,7 @@ if __name__ == '__main__':
     parser.add_argument('--result_path', type=str, default='result',
                         help='Path of generated images')
     parser.add_argument('--epoch', type=int, default=20, 
-                        help='Sampling epoch')
+                        help='Generating images with weight of epoch X')
     parser.add_argument('--batch_size', type=int, default=128,
                         help='Test batch size')
     parser.add_argument('--nrow', type=int, default=16,
