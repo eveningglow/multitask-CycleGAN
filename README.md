@@ -14,7 +14,7 @@ Following image shows improvements such as facial features(make-up, mustache, be
 1. Batch size 1 -> 16
 2. Instance Normalization -> Batch Normalization
 3. Model architecture
-4. Smooth labeling
+4. Smooth labeling  
 __5. Multitask learning with classification loss (semi-supervised learning)__
 
 ## Effect
