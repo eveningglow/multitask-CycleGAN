@@ -11,7 +11,7 @@ Following image shows improvements such as facial features(make-up, mustache, be
 2. Instance Normalization -> Batch Normalization
 3. Model architecture
 4. Smooth labeling  
-5. __Multitask learning with classification loss (semi-supervised learning)__
+5. __Multitask learning with classification loss (semi-supervised learning)__.
 
 ## Effect
 __1. Increasing Batch Size & Replacing Instance Norm with Batch Norm__  
@@ -24,9 +24,11 @@ __3. No Batch Norm in the First Convolution in Discriminator__
 DCGAN suggests not to use normalization in the first convolution. If you don't follow this, the generator will make images with range of approximately -0.7 ~ 0.7 instead of -1.0 ~ 1.0, the blurry images.
 
 __4. Semi-Supervised Learning with Classification Loss__  
-* The image quality increases in most cases.
+Discriminators need to classify domains not only measure the realism. The weight of classification loss, cls_lambda is 1 for training the discriminators and 0.1 for training generators to encourage the generators to focus more on the realism. The Followings are effects of this change.  
+  
+* The image quality and clearity increase in most cases.
 * The model recognizes the features of each gender such as mustache, beard, color lens and make-up better
-* Recognition of hair length becomes worse.
+* However, recognition of hair length becomes worse.
   
   
 ## Process
