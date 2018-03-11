@@ -8,7 +8,7 @@ import dataloader
 import util
 
 class Solver:
-    def __init__(self, root_dir='data', sub_dir='train', batch_size=16, D_lr=0.0001, G_lr=0.0002, lr_decay_epoch=10, cyc_lambda=8, cls_lambda=1, num_epoch=500):
+    def __init__(self, root_dir='data', sub_dir='train', batch_size=16, D_lr=0.0001, G_lr=0.0002, lr_decay_epoch=10, cyc_lambda=8, cls_lambda=0.1, num_epoch=500):
 
         """
             < Variables >
