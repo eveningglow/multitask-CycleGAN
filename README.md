@@ -6,16 +6,12 @@ Following image shows improvements such as facial features(make-up, mustache, be
 <p align="center"><img width="100%" src="png/1.png" /></p>
 <p align="center"> original : without semi-supervised learning / improved : with semi-supervised learning
 
-## Prerequisites
-* [Python 3.5+](https://www.continuum.io/downloads)
-* [PyTorch 0.2.0](http://pytorch.org/)  
-
 ## What are differences with original CycleGAN?
 1. Batch size 1 -> 16
 2. Instance Normalization -> Batch Normalization
 3. Model architecture
 4. Smooth labeling  
-__5. Multitask learning with classification loss (semi-supervised learning)__
+5. __Multitask learning with classification loss (semi-supervised learning)__
 
 ## Effect
 __1. Increasing Batch Size & Replacing Instance Norm with Batch Norm__  
@@ -40,7 +36,19 @@ __4. Semi-Supervised Learning with Classification Loss__
 ### Generator
 <p align="center"><img width="100%" src="png/generator.png" /></p>
   
+## Prerequisites
+* [Python 3.5+](https://www.continuum.io/downloads)
+* [PyTorch 0.2.0](http://pytorch.org/)  
+
+## Dataset
+__CelebA__ dataset is used. After downloading the dataset, all images are supposed to be located in the following path.
   
+* ```data/train/0``` : Training male images
+* ```data/train/1``` : Training female images
+* ```data/val/0``` : Validation male images
+* ```data/val/1``` : Validation female images
+* ```data/test/0``` : Test male images
+* ```data/test/1``` : Test female images
   
 ## Results
 <p align="center"><img width="100%" src="png/new_4.png" /></p>
