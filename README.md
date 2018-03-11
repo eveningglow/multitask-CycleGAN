@@ -13,7 +13,7 @@ Following image shows improvements such as facial features(make-up, mustache, be
 4. Smooth labeling  
 5. __Multitask learning with classification loss (semi-supervised learning)__.
 
-## Effect
+## Effects and Details  
 __1. Increasing Batch Size & Replacing Instance Norm with Batch Norm__  
 This change makes the model recognize the difference of hair length between male and female. The generator started to draw or erase hair after applying this change.  
 
