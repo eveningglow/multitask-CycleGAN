@@ -15,7 +15,7 @@ Following image shows improvements such as facial features(make-up, mustache, be
 2. Instance Normalization -> Batch Normalization
 3. Model architecture
 4. Smooth labeling
-5. Multitask learning with classification loss (semi-supervised learning)
+__5. Multitask learning with classification loss (semi-supervised learning)__
 
 ## Effect
 __1. Increasing Batch Size & Replacing Instance Norm with Batch Norm__  
