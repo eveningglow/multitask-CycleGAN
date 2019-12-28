@@ -1,4 +1,4 @@
-# CycleGAN with auxiliary classifation loss
+# Multitask-CycleGAN
 Implementation of [CycleGAN : Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593) using __pytorch__. 
 Futhermore, this implementation is using __multitask learning with semi-supervised leaning__ which means utilize labels of data. This model converts male to female or female to male.
 Following image shows improvements such as facial features(make-up, mustache, beard, etc) and image qualities.
